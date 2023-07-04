@@ -9,45 +9,76 @@
     </head>
 
     <body class="bg-danger">
-        <section class="container">
-            <h1>Calcola il prezzo del biglietto</h1>
+        <section class="container"> 
+            <!-- form input about passenger info  -->
+            <h1 class="text-center text-light my-3">Calcola il prezzo del biglietto</h1>
 
-            <div class="card">
+            <div class="card bg-dark">
                 <div class="card-body">
                     <div class="container">
-                        <div class="row justify-content-between px-5">
+                        <div class="row justify-content-between px-5 text-white">
                             <div class="col-4 d-flex flex-column">
                                 <label for="username_input" class="form-label text-center fs-4">username</label>
-                                <input type="text" id="username_input" class="form-control" name="username">
+                                <input type="text" id="username_input" class="form-control bg-secondary" name="username">
                             </div>                        
                             <div class="col-4 d-flex justify-content-center flex-column">
                                 <label for="kilometers_input" class="form-label text-center fs-4">kilometers</label>
-                                <input type="text" id="kilometers_input" class="form-control" name="kilometers">
+                                <input type="text" id="kilometers_input" class="form-control bg-secondary" name="kilometers">
                             </div>
                             <div class="col-2 d-flex justify-content-center flex-column">
                                 <label for="age_input" class="form-label text-center fs-4">age</label>
-                                <input type="text" id="age" class="form-control" name="age">
+                                <input type="text" id="age" class="form-control bg-secondary" name="age">
                             </div>
                         </div>
 
-                        <div class="d-flex gap-4 justify-content-center">
-                            <button class="btn mt-4 btn-secondary generate_btn btn-lg">Genera</button>
-                            <button class="btn mt-4 btn-secondary btn-lg">Annulla</button>
-                        </div>
-                        
-                    </div>   
+                        <div class="d-flex gap-4 justify-content-center mt-5">
+                            <button class="btn btn-secondary generate_btn btn-lg">Genera</button>
+                            <button class="btn btn-secondary btn-lg">Annulla</button>
+                        </div>                       
+                    </div>       
+                </div>
+            </div>
 
+            <!-- ticket done -->
+            <h1 class="text-center text-light mt-5 mb-3">Il Tuo Biglietto</h1>
+
+            <div class="card bg-secondary border-light">
+                <div class="card-body">  
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <div class="row justify-content-between text-white">
+                                <div class="col-3 border-end border-light">
+                                    <h3>Nome Passeggero</h3>
+                                    <h5 class="pt-4 t_name">""</h5>
+                                </div>
+    
+                                <div class="col-2 border-end border-light">
+                                    <h3>Offerta</h3>
+                                    <h5 class="pt-4 t_offer">""</h5>
+                                </div>
+    
+                                <div class="col-2 border-end border-light">
+                                    <h3>Carrozza</h3>
+                                    <h5 class="pt-4 t_carriage">""</h5>
+                                </div>
+    
+                                <div class="col-2 border-end border-light">
+                                    <h3>Codice CP</h3>
+                                    <h5 class="pt-4 t_codeCP">""</h5>
+                                </div>
+    
+                                <div class="col-3">
+                                    <h3>Costo Biglietto</h3>
+                                    <h5 class="pt-4 t_price">""</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
 
-
         </section>       
-
-        
-
-        <h2 id="username"></h2>
-        <h2 id="ticket_cost"></h2>
 
         <script src="js/ticketTrain.js"></script>
     </body>

@@ -23,21 +23,30 @@ Login_btn.addEventListener("click", function () {
         case age < 18:
             couponValue = (ridePrice / 100) * underAgeCouponPrecentage;
             finalPrice = (ridePrice - couponValue).toFixed(2);
-            document.getElementById("username").innerHTML = username;
-            document.getElementById("ticket_cost").innerHTML = `Il costo della sua tratta ferroviaria è di ${finalPrice}€`;
+            document.querySelector(".t_name").innerHTML = username;
+            document.querySelector(".t_offer").innerHTML = `minorenni`;
+            document.querySelector(".t_carriage").innerHTML = Math.floor(Math.random() * (10) + 1);
+            document.querySelector(".t_codeCP").innerHTML = Math.floor(Math.random() * (90000) + 10000);
+            document.querySelector(".t_price").innerHTML = `${finalPrice}€`;
             break;
     
         case age > 65:
             couponValue = (ridePrice / 100) * overAgeCouponPrecentage;
             finalPrice = (ridePrice - couponValue).toFixed(2);
-            document.getElementById("username").innerHTML = username;
-            document.getElementById("ticket_cost").innerHTML = `Il costo della sua tratta ferroviaria è di ${finalPrice}€`;
+            document.querySelector(".t_name").innerHTML = username;
+            document.querySelector(".t_offer").innerHTML = `anziani`;
+            document.querySelector(".t_carriage").innerHTML = Math.floor(Math.random() * (10) + 1);
+            document.querySelector(".t_codeCP").innerHTML = Math.floor(Math.random() * (90000) + 10000);
+            document.querySelector(".t_price").innerHTML = `${finalPrice}€`;
             break;
     
         default:
             finalPrice = ridePrice.toFixed(2);
-            document.getElementById("username").innerHTML = username;
-            document.getElementById("ticket_cost").innerHTML = `Il costo della sua tratta ferroviaria è di ${finalPrice}€`;
+            document.querySelector(".t_name").innerHTML = username;
+            document.querySelector(".t_offer").innerHTML = `standard`;
+            document.querySelector(".t_carriage").innerHTML = Math.floor(Math.random() * (10) + 1);
+            document.querySelector(".t_codeCP").innerHTML = Math.floor(Math.random() * (90000) + 10000);
+            document.querySelector(".t_price").innerHTML = `${finalPrice}€`;
     }
 })
 
