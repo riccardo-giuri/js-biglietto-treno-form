@@ -19,21 +19,25 @@
                         <div class="row justify-content-between px-5 text-white">
                             <div class="col-4 d-flex flex-column">
                                 <label for="username_input" class="form-label text-center fs-4">username</label>
-                                <input type="text" id="username_input" class="form-control bg-secondary" name="username">
+                                <input type="text" id="username_input" class="form-control bg-secondary text-white" name="username">
                             </div>                        
                             <div class="col-4 d-flex justify-content-center flex-column">
                                 <label for="kilometers_input" class="form-label text-center fs-4">kilometers</label>
-                                <input type="text" id="kilometers_input" class="form-control bg-secondary" name="kilometers">
+                                <input type="text" id="kilometers_input" class="form-control bg-secondary text-white" name="kilometers">
                             </div>
                             <div class="col-2 d-flex justify-content-center flex-column">
-                                <label for="age_input" class="form-label text-center fs-4">age</label>
-                                <input type="text" id="age" class="form-control bg-secondary" name="age">
+                                <div class="text-center fs-4 pb-2">age</div>
+                                <select class="form-select form-select-m bg-secondary text-white" aria-label=".form-select-sm example">
+                                    <option value="1">Minorenne</option>
+                                    <option value="2" selected>Adulto</option>
+                                    <option value="3">Anziano</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="d-flex gap-4 justify-content-center mt-5">
                             <button class="btn btn-secondary generate_btn btn-lg">Genera</button>
-                            <button class="btn btn-secondary btn-lg">Annulla</button>
+                            <button class="btn btn-secondary cancel_btn btn-lg">Annulla</button>
                         </div>                       
                     </div>       
                 </div>
@@ -49,27 +53,27 @@
                             <div class="row justify-content-between text-white">
                                 <div class="col-3 border-end border-light">
                                     <h3>Nome Passeggero</h3>
-                                    <h5 class="pt-4 t_name">""</h5>
+                                    <h5 class="pt-4 t_name">--</h5>
                                 </div>
     
                                 <div class="col-2 border-end border-light">
                                     <h3>Offerta</h3>
-                                    <h5 class="pt-4 t_offer">""</h5>
+                                    <h5 class="pt-4 t_offer">--</h5>
                                 </div>
     
                                 <div class="col-2 border-end border-light">
                                     <h3>Carrozza</h3>
-                                    <h5 class="pt-4 t_carriage">""</h5>
+                                    <h5 class="pt-4 t_carriage">--</h5>
                                 </div>
     
                                 <div class="col-2 border-end border-light">
                                     <h3>Codice CP</h3>
-                                    <h5 class="pt-4 t_codeCP">""</h5>
+                                    <h5 class="pt-4 t_codeCP">--</h5>
                                 </div>
     
                                 <div class="col-3">
                                     <h3>Costo Biglietto</h3>
-                                    <h5 class="pt-4 t_price">""</h5>
+                                    <h5 class="pt-4 t_price">--</h5>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +82,7 @@
                 </div>
             </div>
 
-        </section>       
+        </section>    
 
         <script src="js/ticketTrain.js"></script>
     </body>
